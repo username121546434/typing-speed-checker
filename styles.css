@@ -1,0 +1,20 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#done {
+    color: green;
+}
+
+#not-done {
+    color: lightgray;
+}
+
+.wrong {
+    color: red;
+}
+
+#wpm, #restart-btn {
+    opacity: 0;
+}
