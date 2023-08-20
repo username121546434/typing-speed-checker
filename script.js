@@ -87,12 +87,12 @@ currentText.addEventListener('input', (event) => {
         return;
     }
 
-    if (text.charAt(text.length - 1) == '.' && text == currentWord) {
+    if (text.charAt(text.length - 1) == '.' && text.toLowerCase() == currentWord.toLowerCase()) {
         moveLetter(true);
-    } else if (text.slice(0, text.length - 1) != currentWord) {
-        moveLetter(false);
+    } else if ((text.slice(0, text.length - 1)).toLowerCase() == currentWord.toLowerCase()) {
+        moveLetter(true);
     } else {
-        moveLetter(true);
+        moveLetter(false);
     }
 
     if (currentWord === null) {
